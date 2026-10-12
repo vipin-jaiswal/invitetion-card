@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #fff5d9;
+  background: #031810;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root { min-width: 320px; min-height: 100%; margin: 0; }
+html, body, #root { width: 100%; height: 100%; overflow: hidden; }
+body { min-height: 100vh; min-height: 100svh; }
+button { font: inherit; cursor: pointer; }
+button:disabled { cursor: default; }
+
+.invitation-scene { min-height: 100vh; min-height: 100svh; }
+.scene-background { background-color: #031810; }
+@media (max-width: 639px) {
+  .emblem-wrap {
+    width: min(calc(100vw - 32px), 41.16svh, 390px);
+    max-height: 440px;
+    aspect-ratio: 395 / 499;
+  }
+  .emblem-wrap img { width: 100%; height: auto; }
+  .invitation-card {
+    width: min(calc(100vw - 32px), 370px);
+  }
+  .scene-background {
+    background-position: center top !important;
+    background-size: auto 100vh;
+    background-size: auto 100svh;
+  }
+}
+.scene-shade {
+  background:
+    linear-gradient(180deg, rgba(0, 12, 8, .46) 0%, rgba(0, 10, 7, .12) 37%, rgba(0, 8, 5, .08) 67%, rgba(0, 8, 5, .42) 100%),
+    radial-gradient(ellipse at 50% 48%, transparent 20%, rgba(0, 0, 0, .24) 100%);
+}
+.scene-particles {
+  opacity: .25;
+  background-image:
+    radial-gradient(1.5px 1.5px at 12% 24%, rgba(255, 220, 132, .9) 50%, transparent 100%),
+    radial-gradient(1px 1px at 77% 35%, rgba(255, 230, 166, .8) 50%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 66% 72%, rgba(251, 202, 90, .75) 50%, transparent 100%),
+    radial-gradient(1px 1px at 28% 82%, rgba(255, 230, 166, .7) 50%, transparent 100%);
+  background-size: 230px 260px, 290px 330px, 350px 280px, 270px 310px;
+  animation: particle-drift 24s linear infinite;
+}
+.pedestal-glow {
+  background: radial-gradient(ellipse, rgba(238, 175, 55, .35), rgba(238, 175, 55, .09) 38%, transparent 72%);
+  filter: blur(13px);
+}
+.emblem-wrap { width: min(76vw, 390px, 37svh); transform-style: preserve-3d; }
+.emblem-action { width: 100%; }
+@media (max-width: 639px) {
+  .emblem-wrap { margin-left: -5px; }
+}
+.emblem-glint {
+  border: 1px solid rgba(255, 228, 161, .88);
+  box-shadow: 0 0 28px rgba(255, 195, 78, .58), inset 0 0 24px rgba(255, 225, 150, .2);
+}
+.invitation-card { transform-style: preserve-3d; scrollbar-width: thin; scrollbar-color: #b58a37 transparent; }
+.card-flower {
+  position: absolute;
+  top: 1.8rem;
+  z-index: 1;
+  color: #a87927;
+  font-size: 1.6rem;
+  line-height: 1;
+  opacity: .78;
+}
+.card-flower-left { left: 1.15rem; transform: rotate(-42deg); }
+.card-flower-right { right: 1.15rem; transform: scaleX(-1) rotate(-42deg); }
+
+@keyframes particle-drift {
+  from { background-position: 0 0, 0 0, 0 0, 0 0; }
+  to { background-position: 0 -260px, 0 330px, 0 -280px, 0 310px; }
+}
+
+@media (max-height: 680px) {
+  .intro-copy { top: 5svh !important; }
+  .intro-copy h1 { font-size: clamp(1.5rem, 5svh, 2.35rem); }
+  .intro-copy p { margin-top: .35rem; }
+  .emblem-wrap { width: min(calc(100vw - 32px), 34.05svh); }
+  .invitation-card { max-height: 66svh !important; padding-top: 2.6rem; padding-bottom: 1rem; }
+  .invitation-card h2 { margin-top: .2rem; font-size: 1.35rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; }
+  .scene-particles { animation: none; }
+}
