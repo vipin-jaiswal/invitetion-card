@@ -1,9 +1,9 @@
 export const weddingData = {
   bride: {
-    name: "{didi}",
+    name: "Siddiqua Shaikh",
   },
   groom: {
-    name: "{jij a}",
+    name: "Abu Shahma Sultan siddiqui",
   },
   events: {
     haldi: {
@@ -25,12 +25,12 @@ export const weddingData = {
     },
   },
   contacts: {
-    bride: { name: "{Bride Contact Name}", phone: "{Phone Number}" },
-    groom: { name: "{Groom Contact Name}", phone: "{Phone Number}" },
+    bride: { name: "Shaikh Raiyan", phone: "8874010117" },
+    groom: { name: "Shaikh Adnan", phone: "9506095846" },
   },
   venue: {
-    name: "{Venue}",
-    address: "{Uttrai maryadpur mau}",
+    name: "Venue",
+    address: "Uttrai maryadpur mau",
     mapsUrl: "",
   },
 };

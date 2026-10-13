@@ -20,7 +20,7 @@ export default function VenuePage() {
       {/* Background decorations */}
       <div className="pointer-events-none absolute -left-20 top-16 h-64 w-64 rounded-full border border-[#d6b36a]/20" />
 
-      <div className="pointer-events-none absolute -bottom-20 -right-20 h-80 w-80 rounded-full border border-[#d6b36a]/20" />
+      <div className="pointer-events-none  absolute -bottom-20 -right-20 h-80 w-80 rounded-full border border-[#d6b36a]/20" />
 
       <span className="pointer-events-none absolute left-[12%] top-[18%] text-2xl text-[#e5ca8b]/50">
         ✦
@@ -60,7 +60,7 @@ export default function VenuePage() {
         <motion.article
           whileHover={{ y: -3 }}
           transition={{ duration: 0.25 }}
-          className="mx-auto w-full rounded-[30px] border-2 border-[#c6a15a] bg-[#fff9ec] p-3 shadow-[0_25px_70px_rgba(0,0,0,0.3)] sm:p-5"
+          className="mx-auto mr-3 rounded-[30px] border-2 border-[#c6a15a] bg-[#fff9ec] p-3 shadow-[0_25px_70px_rgba(0,0,0,0.3)] sm:p-5"
         >
           <div className="rounded-[22px] border border-[#c6a15a]/60 px-5 py-8 text-center sm:px-8 sm:py-10">
 

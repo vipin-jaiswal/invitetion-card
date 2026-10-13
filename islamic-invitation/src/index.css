@@ -1,4 +1,70 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Pinyon+Script&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Story+Script&display=swap');
+
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Pinyon Script";
+  src: url("https://fonts.gstatic.com/s/pinyonscript/v18/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNa7lujVj9_mf.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* Ballet Font */
+.font-ballet {
+  font-family: "Ballet", cursive;
+  font-weight: 400;
+}
+
+/* Pinyon Script Font */
+.font-pinyon {
+  font-family: "Pinyon Script", cursive;
+}
+
+/* Roboto Mono Font */
+.font-roboto-mono {
+  font-family: "Roboto Mono", monospace;
+}
+
+/* Story Script Font */
+.font-story-script {
+  font-family: "Story Script", cursive;
+}
+
+/* Default Website Font */
+body {
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+}
+.font-ballet {
+  font-family: "Ballet", cursive;
+  font-weight: 600;
+  -webkit-text-stroke: .8px currentColor;
+}
+.pinyon-script-regular {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+  
+
+.font-story-script {
+  font-family: "Story Script", cursive;
+  font-weight: 600;
+  -webkit-text-stroke: 0.5px currentColor;
+}
 
 :root {
   font-family: Georgia, "Times New Roman", serif;
@@ -14,7 +80,8 @@
 * { box-sizing: border-box; }
 
 html, body, #root { min-width: 320px; min-height: 100%; margin: 0; }
-html, body, #root { width: 100%; height: 100%; overflow: hidden; }
+html, body, #root { width: 100%; min-height: 100%; }
+html, body { overflow-x: hidden; }
 body { min-height: 100vh; min-height: 100svh; }
 button { font: inherit; cursor: pointer; }
 button:disabled { cursor: default; }

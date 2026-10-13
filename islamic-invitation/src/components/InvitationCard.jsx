@@ -48,8 +48,8 @@ export default function InvitationCard({ stage }) {
         className="relative z-0 block h-auto w-full select-none"
       />
 
-      <div className="absolute inset-x-[18%] top-[27%] bottom-[20%] z-10 flex flex-col items-center justify-center text-center text-[#174432] [text-shadow:0_1px_1px_rgba(255,250,235,0.7)]">
-        <p lang="ar" dir="rtl" className="font-serif text-[clamp(9px,2.4vw,13px)] leading-relaxed text-[#916e34]">
+      <div className="absolute inset-x-[18%] top-[35%] bottom-[20%] z-10 flex flex-col items-center justify-center text-center text-[#174432] [text-shadow:0_1px_1px_rgba(255,250,235,0.7)]">
+        <p lang="ar" dir="rtl" className=" text-8xl font-extrabold text-[clamp(9px,2.4vw,13px)] leading-relaxed text-[#000000]">
           بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
         </p>
         <div aria-hidden="true" className="my-[2%] flex w-full items-center justify-center gap-2 text-[#a17a3c]">
@@ -58,34 +58,39 @@ export default function InvitationCard({ stage }) {
           <span className="h-px w-8 bg-current/50" />
         </div>
 
-        <p className="text-[clamp(7px,1.9vw,10px)] italic tracking-wide text-[#536b59]">
-          Together with their families
+        <p className="text-[clamp(7px,1.9vw,10px)] text-2xl font-bold italic tracking-wide text-[#536b59]">
+          Together with 
         </p>
-        <h2 className="mt-[3%] font-serif text-[clamp(16px,4.4vw,23px)] leading-tight text-[#153f30]">
+        <p className="text-[clamp(7px,1.9vw,10px)] text-2xl font-bold italic tracking-wide text-[#536b59]">
+          their families
+        </p>
+        <h2 className="mt-[5%] font-serif text-6xl text-[clamp(16px,4.4vw,23px)] leading-tight text-[#153f30]">
           {weddingData.bride.name}
         </h2>
-        <p className="my-[1%] font-serif text-[clamp(15px,3.8vw,20px)] italic leading-none text-[#a17a3c]" aria-label="and">
-          &amp;
+         <p className="text-[8px]">D/o Naseem Ahmad Shaikh</p>
+       
+        <p className="mt-[5%] font-serif text-[clamp(15px,3.8vw,20px)] italic leading-none text-[#a17a3c]" aria-label="and">
+         Weds
         </p>
-        <p className="font-serif text-[clamp(16px,4.4vw,23px)] leading-tight text-[#153f30]">
+        <h2 className="mt-[3%]  font-serif text-6xl text-[clamp(16px,4.4vw,23px)] w-[60%] leading-tight text-[#153f30]">
           {weddingData.groom.name}
-        </p>
+        </h2>
+         <p className="text-[8px]">s/o Sultan Ghalib Siddiqui</p>
 
-        <div id="event-details" className="mt-[4%] grid w-full grid-cols-2 gap-x-2 gap-y-[3%] border-t border-[#a17a3c]/40 pt-[3%]">
-          {eventDetails.map(([label, value]) => (
-            <div key={label} className={label === "Location" ? "col-span-2" : ""}>
-              <p className="text-[clamp(6px,1.5vw,8px)] uppercase tracking-[0.14em] text-[#8a6b38]">{label}</p>
-              <p className="mt-0.5 break-words font-serif text-[clamp(8px,2vw,10px)] text-[#174432]">{value}</p>
-            </div>
-          ))}
-        </div>
+        
 
-        <div className="mt-[4%] flex items-center justify-center">
+        <div className="mt-[6%] flex items-center justify-center">
           <button
             type="button"
             disabled={!settled || !openingFinished}
-            onClick={() => document.getElementById("events-page")?.scrollIntoView({ behavior: "smooth", block: "start" })}
-            className="rounded-full border border-[#9a773a] bg-[#f5ead2]/90 px-2 py-0.5 text-[clamp(6px,1.5vw,8px)] tracking-wide text-[#174432] shadow-sm disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8f6d37]"
+            onClick={() => {
+              document.getElementById("events-page")?.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }}
+            aria-label="Open the wedding events page"
+            className="rounded-full border border-[#9a773a] bg-[#f5ead2]/90 px-1.5 py-px text-[6px] tracking-wide text-[#174432] shadow-sm disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8f6d37]"
           >
             View Events
           </button>

@@ -39,10 +39,10 @@ export default function CountdownPage() {
   ];
 
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#063d2e] px-4 py-10 text-[#174633] sm:py-14">
+    <section className="relative flex mr-3 min-h-screen items-center justify-center overflow-hidden bg-[#063d2e] px-4 py-10 text-[#174633] sm:py-14">
 
       {/* Background ornaments */}
-      <div className="pointer-events-none absolute inset-0 opacity-40">
+      <div className="pointer-events-none  absolute inset-0 opacity-40">
         <div className="absolute -left-24 -top-24 h-72 w-72 rounded-full border border-[#d6b36a]" />
         <div className="absolute -bottom-24 -right-24 h-80 w-80 rounded-full border border-[#d6b36a]" />
         <span className="absolute left-[12%] top-[20%] text-2xl text-[#e5ca8b]">✦</span>
@@ -67,18 +67,18 @@ export default function CountdownPage() {
           </div>
         </motion.div>
 
-        <p className="text-xs uppercase tracking-[0.4em] text-[#98783e] sm:text-sm">
-          Bismillah · A New Beginning
+        <p className="text-xs uppercase tracking-[0.2em] text-[#98783e] sm:text-sm">
+          Bismillah A New Beginning
         </p>
 
-        <h1 className="mt-5 font-serif text-4xl leading-tight text-[#174633] sm:text-6xl">
+        <h1 className="mt-5 font-serif text-3xl leading-tight text-[#174633] sm:text-6xl">
           Counting Down to
           <span className="mt-2 block italic text-[#a47b32]">
             Our Nikah
           </span>
         </h1>
 
-        <div className="my-7 flex items-center justify-center gap-3 text-[#d6b36a]">
+        <div className="my-4 flex items-center justify-center gap-3 text-[#d6b36a]">
           <span className="h-px w-12 bg-current/60" />
           <span>✦ ❦ ✦</span>
           <span className="h-px w-12 bg-current/60" />
@@ -110,11 +110,11 @@ export default function CountdownPage() {
             A lifetime of love begins soon
           </p>
 
-          <p className="mt-4 text-xs uppercase tracking-[0.25em] text-[#637967]">
-            InshaAllah · Our Forever Begins
+          <p className="mt-4 text-xs uppercase tracking-[0.2em] text-[#637967]">
+            InshaAllah Our Forever Begins
           </p>
 
-          <p className="mt-6 text-2xl text-[#d6b36a]">❦</p>
+          <p className="mt-4 text-2xl text-[#d6b36a]">❦</p>
         </div>
       </motion.div>
     </section>

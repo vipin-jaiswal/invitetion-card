@@ -3,14 +3,14 @@ import { Phone } from "lucide-react";
 import { weddingData } from "../data/weddingData";
 
 const contacts = [
-  { role: "Bride's Family", ...weddingData.contacts.bride },
-  { role: "Groom's Family", ...weddingData.contacts.groom },
+  { role: "", ...weddingData.contacts.bride },
+  { role: "", ...weddingData.contacts.groom },
 ];
 
 export default function ContactPage() {
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#f4ecd9] px-4 py-14 text-[#174633] sm:px-6">
-      <div className="pointer-events-none absolute -left-20 top-10 h-64 w-64 rounded-full border border-[#b18a42]/20" />
+    <section className="relative mr-3 flex min-h-screen items-center justify-center overflow-hidden bg-[#f4ecd9] px-4 py-14 text-[#174633] sm:px-6">
+      <div className="pointer-events-none absolute -left-20 top-10 h-54 w-64 rounded-full border border-[#b18a42]/20" />
       <div className="pointer-events-none absolute -bottom-20 -right-20 h-80 w-80 rounded-full border border-[#b18a42]/20" />
 
       <motion.div
@@ -19,10 +19,10 @@ export default function ContactPage() {
         transition={{ duration: 0.8 }}
         className="relative z-10 w-full max-w-4xl"
       >
-        <header className="mb-9 text-center">
+        <header className="mb-5 text-center">
           <p className="mb-3 text-3xl text-[#b18a42]" aria-hidden="true">❦ ✦ ❦</p>
           <p className="text-xs uppercase tracking-[0.35em] text-[#98783e]">We Are Here for You</p>
-          <h1 className="mt-4 font-serif text-4xl sm:text-5xl">Get in Touch</h1>
+          <h1 className="mt-4 font-serif text-4xl sm:text-5xl">Contect Information</h1>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-[#486b58]">
             For questions about the celebration, please contact either family.
           </p>
@@ -44,8 +44,8 @@ export default function ContactPage() {
                 </div>
                 <p className="mt-4 text-[9px] uppercase tracking-[0.12em] text-[#98783e] sm:text-xs sm:tracking-[0.22em]">{contact.role}</p>
                 <h2 className="mt-2 break-words font-serif text-lg text-[#174633] sm:text-3xl">{contact.name}</h2>
-                <p className="mt-4 text-[9px] uppercase tracking-[0.14em] text-[#98783e] sm:text-xs sm:tracking-[0.18em]">Phone</p>
-                <p className="mt-1 break-words text-xs text-[#486b58] sm:text-lg">{contact.phone}</p>
+                <p className="mt-4 text-[12px] uppercase tracking-[0.14em] text-[#98783e] sm:text-xl sm:tracking-[0.28em]">Phone</p>
+                <p className="mt-1 break-words text-xl text-[#486b58] sm:text-lg">{contact.phone}</p>
               </div>
             </motion.article>
           ))}

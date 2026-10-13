@@ -28,24 +28,24 @@ export default function BlessingsPage() {
           to bless our union with love, peace, patience, and happiness.
         </p>
 
-        <div className="mx-auto mt-9 w-full rounded-[30px] border-2 border-[#c6a15a] bg-[#fff9ec] p-3 shadow-2xl sm:p-5">
-          <div className="rounded-[22px] border border-[#c6a15a]/60 px-5 py-10 sm:px-10 sm:py-14">
+        <div className="mx-auto mt-5 mr-3  rounded-[30px] border-2 border-[#c6a15a] bg-[#fff9ec] p-3 shadow-2xl sm:p-5">
+          <div className="rounded-[22px] border border-[#c6a15a]/60 px-2 py-5 sm:px-10 sm:py-14">
             <p className="text-4xl text-[#b18a42]">۞</p>
 
             <p
               lang="ar"
               dir="rtl"
-              className="mt-6 font-serif text-2xl leading-[2] text-[#174633] sm:text-3xl"
+              className="mt-4 font-serif text-2xl leading-[2] text-[#174633] sm:text-3xl"
             >
               بَارَكَ اللَّهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ
             </p>
 
-            <p className="mt-5 text-sm italic leading-7 text-[#71816c]">
+            <p className="mt-3 text-sm italic leading-7 text-[#71816c]">
               May Allah bless you, shower His blessings upon you,
               and unite you both in goodness.
             </p>
 
-            <div className="my-7 flex items-center justify-center gap-3 text-[#b18a42]">
+            <div className="my-4 flex items-center justify-center gap-3 text-[#b18a42]">
               <span className="h-px w-12 bg-current/50" />
               <span>✦</span>
               <span className="h-px w-12 bg-current/50" />
@@ -55,20 +55,20 @@ export default function BlessingsPage() {
               A Prayer for Our Future
             </h2>
 
-            <p className="mt-5 text-base leading-8 text-[#345747]">
+            <p className="mt-5 text-sm leading-8 text-[#345747]">
               May our home always be filled with faith, our hearts
               with kindness, and our lives with countless blessings.
               May Allah guide us through every season of life and
               keep our bond strong with love, mercy, and understanding.
             </p>
 
-            <p className="mt-7 font-wedding text-3xl text-[#a58243]">
-              Ameen, Ya Rabb
+            <p className="mt-5 font-wedding text-3xl text-[#a58243]">
+              Ameen,Ya Rabb
             </p>
           </div>
         </div>
 
-        <p className="mt-8 font-serif text-xl italic text-[#e5ca8b]">
+        <p className="mt-6 font-serif text-xl italic text-[#e5ca8b]">
           Your prayers are our greatest gift.
         </p>
       </motion.div>

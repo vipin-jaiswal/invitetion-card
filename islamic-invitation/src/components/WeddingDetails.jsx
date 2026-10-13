@@ -19,17 +19,17 @@ export default function WeddingDetails({ stage }) {
           "radial-gradient(ellipse at 15% 15%, rgba(214,179,106,.13), transparent 35%), radial-gradient(ellipse at 85% 80%, rgba(214,179,106,.11), transparent 38%)",
       }}
     >
-      <article className="mx-auto w-full max-w-2xl rounded-[28px] border-2 border-[#b99756] bg-[#fffaf0]/90 p-5 text-center shadow-[0_20px_65px_rgba(48,37,18,.18)] sm:p-9">
-        <p lang="ur" dir="rtl" className="mb-5 font-serif text-xl leading-relaxed text-[#153f30] sm:text-2xl">
+      <article className="mx-auto mr-3 w-full max-w-2xl rounded-[28px] border-2 border-[#b99756] bg-[#fffaf0]/90 p-5 text-center shadow-[0_20px_65px_rgba(48,37,18,.18)] sm:p-9">
+        <p lang="ur" dir="rtl" className="mb-2 font-serif text-xl leading-relaxed text-[#153f30] sm:text-2xl">
           بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
         </p>
-        <p className="mb-5 font-serif text-base italic text-[#8b7040] sm:text-lg">
+        <p className="mb-2 font-serif text-base italic text-[#8b7040] sm:text-lg">
           Together with their families
         </p>
-        <p lang="ur" dir="rtl" className="font-serif text-lg leading-[2] text-[#345747] sm:text-xl">
+        <p lang="ur" dir="rtl" className="font-sans text-lg leading-[2] text-[#345747] sm:text-xl">
           اللہ کے نام سے جو نہایت مہربان، بے حد رحم فرمانے والا ہے۔ ہماری خوشیوں کے اس خوبصورت موقع پر آپ کی شرکت ہمارے لیے باعثِ مسرت ہوگی۔ دعا ہے کہ اللہ تعالیٰ اس نئے سفر کو محبت، رحمت، برکت اور خوشیوں سے بھر دے۔
         </p>
-        <p className="my-6 text-[#b18b48]" aria-hidden="true">✦ ❋ ✦</p>
+        <p className="my-2 text-[#b18b48]" aria-hidden="true">✦ ❋ ✦</p>
         <p className="font-serif text-base leading-8 text-[#345747] sm:text-lg">
           In the name of Allah, the Most Gracious, the Most Merciful. As we begin this beautiful new chapter of our lives, your presence and blessings would mean the world to us. May Allah fill our journey together with endless love, peace, mercy, and happiness. We look forward to celebrating this special occasion with you.
         </p>

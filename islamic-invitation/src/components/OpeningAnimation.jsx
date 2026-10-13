@@ -32,7 +32,7 @@ export default function OpeningAnimation() {
   };
 
   return (
-    <main className="invitation-scene relative isolate h-screen h-svh w-full overflow-x-hidden overflow-y-auto bg-[#031810] text-amber-50">
+    <main id="invitation-scroll" className={`invitation-scene relative isolate w-full overflow-x-hidden bg-[#031810] text-amber-50 ${stage >= 5 ? "min-h-svh overflow-y-auto" : "h-screen h-svh overflow-y-hidden"}`}>
       <div
         aria-hidden="true"
         className="scene-background fixed inset-0 -z-20 bg-cover bg-[center_58%] bg-no-repeat"
@@ -61,17 +61,31 @@ export default function OpeningAnimation() {
         <InvitationCard stage={stage} />
       </div>
 
+      {stage === 0 && (
+        <button
+          type="button"
+          onClick={openInvitation}
+          className="absolute bottom-[clamp(2rem,8svh,5rem)] left-1/2 z-20 -translate-x-1/2 rounded-full border border-amber-200/80 bg-[#123b2c]/90 px-2 py-.5 text-[12px] font-medium uppercase tracking-[0.1em] text-amber-100 shadow-[0_8px_30px_rgba(0,0,0,.4)] transition hover:bg-[#1a513c] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-100 sm:px-5 sm:py-2 sm:text-xs"
+        >
+          Open Invitation
+        </button>
+      )}
+
       <div className="sr-only" aria-live="polite" aria-atomic="true">{stageLabels[stage]}</div>
       </section>
-       <ScratCard stage={stage} />
-       <EventsPage />
-      <WeddingDetails stage={stage} />
+      {stage >= 5 && (
+        <>
+          <ScratCard stage={stage} />
+          <EventsPage />
+          <WeddingDetails stage={stage} />
         <InvitationMessage />
         <CountdownPage />
         <VenuePage />
         <BlessingsPage />
         <ContactPage />
         <ThankYouPage />
+        </>
+      )}
     </main>
   );
 }

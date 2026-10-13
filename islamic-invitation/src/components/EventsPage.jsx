@@ -47,7 +47,7 @@ export default function EventsPage() {
             Wedding Events
           </h1>
 
-          <p className="mx-auto mt-5 max-w-xl text-sm leading-7 text-[#486b58] sm:text-base">
+          <p className=" mt-2 max-w-xl text-sm leading-7 mr-3 text-[#486b58] sm:text-base">
             By the grace of Allah, we invite you to join us
             for these special moments filled with love,
             happiness, prayers, and blessings.
@@ -55,7 +55,7 @@ export default function EventsPage() {
         </motion.header>
 
         {/* Event cards */}
-        <div className="grid grid-cols-1 gap-7 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-5 mr-3 md:grid-cols-2">
           {events.map((event, index) => (
             <motion.article
               key={event.number}
@@ -77,7 +77,7 @@ export default function EventsPage() {
                   </span>
                 </div>
 
-                <div className="my-4 text-center">
+                <div className=" text-center">
                   <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full border border-[#c6a15a]/60 bg-[#f6edda]">
                     <Sparkles size={23} className="text-[#a58243]" />
                   </div>
@@ -140,7 +140,7 @@ export default function EventsPage() {
                 </div>
 
                 <div className="mt-auto pt-5 text-center">
-                  <p className="font-wedding text-2xl text-[#a58243]">
+                  <p className="font-wedding text-xl text-[#a58243]">
                     With love & blessings
                   </p>
                 </div>
@@ -151,7 +151,7 @@ export default function EventsPage() {
 
         {/* Footer */}
         <footer className="mt-12 text-center">
-          <p className="font-serif text-xl italic text-[#8b7040]">
+          <p className="font-ballet text-2xl italic text-[#8b7040]">
             Your presence will make our celebration complete.
           </p>
           <p className="mt-4 text-2xl text-[#d6b36a]">✦ ❦ ✦</p>

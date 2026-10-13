@@ -211,7 +211,7 @@ export default function ScratchCard() {
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         className="relative z-10 w-full max-w-[min(92vw,34rem)]"
       >
-        <div className="relative rounded-[42%_42%_15%_15%/12%_12%_8%_8%] bg-[#b58a3f] p-[2px] shadow-[0_24px_90px_rgba(0,0,0,.56),0_0_45px_rgba(218,176,81,.15)]">
+        <div className="relative mr-3 rounded-[42%_42%_15%_15%/12%_12%_8%_8%] bg-[#b58a3f] p-[2px] shadow-[0_24px_90px_rgba(0,0,0,.56),0_0_45px_rgba(218,176,81,.15)]">
           <div className="rounded-[inherit] bg-[#f2e8cc] p-[5px]">
             <div className="relative overflow-hidden rounded-[inherit] border border-[#b99550] bg-[#f8f0dc] px-5 pb-7 pt-11 text-center sm:px-9 sm:pb-9 sm:pt-14">
               <div aria-hidden="true" className="pointer-events-none absolute inset-[9px] rounded-[inherit] border border-[#b99550]/70" />
@@ -225,11 +225,11 @@ export default function ScratchCard() {
               <div className="relative mx-auto mt-6 w-full max-w-[26rem] rounded-2xl border-[3px] border-[#a87527] bg-[linear-gradient(145deg,#fff9e5,#e9d69e_44%,#fff3c9)] p-2 shadow-[inset_0_0_0_2px_rgba(255,255,255,.7),0_12px_25px_rgba(70,48,15,.2)] sm:mt-7 sm:p-3">
                 <div ref={surfaceRef} className="relative flex min-h-36 items-center justify-center overflow-hidden rounded-xl border border-[#c7a65b] px-5 py-6 sm:min-h-44 sm:px-8">
                   <div className="relative z-0 max-w-sm text-[#98702e]">
-                    <p className="font-serif text-sm font-semibold uppercase tracking-[0.3em] text-[#98702e] sm:text-base">
+                    <p className="font-Roboto Mono text-sm font-semibold uppercase tracking-[0.3em] text-[#98702e] sm:text-base">
                       Save the Date
                     </p>
-                    <p className="mt-3 font-serif text-2xl text-[#98702e] sm:text-3xl">{nikahDateLabel.split(",")[0]}</p>
-                    <p className="mt-1 font-serif text-lg tracking-wide text-[#98702e] sm:text-xl">{nikahDateLabel.replace(`${nikahDateLabel.split(",")[0]}, `, "")}</p>
+                    <p className="mt-3 font-sans text-2xl font-extrabold text-[#98702e] sm:text-3xl">{nikahDateLabel.split(",")[0]}</p>
+                    <p className="mt-1 font-sans text-xl font-bold tracking-wide text-[#98702e] sm:text-xl">{nikahDateLabel.replace(`${nikahDateLabel.split(",")[0]}, `, "")}</p>
                   </div>
                   {!revealed && (
                     <canvas
