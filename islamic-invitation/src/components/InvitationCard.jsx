@@ -20,14 +20,13 @@ export default function InvitationCard({ stage }) {
       aria-label="Islamic wedding invitation"
       aria-hidden={!visible}
       inert={!visible}
-      className="invitation-card pointer-events-auto absolute left-1/2 top-1/2 z-20 w-[min(calc(100vw-32px),680px,51svh)] -translate-x-1/2"
-      initial={false}
+      className="invitation-card pointer-events-auto absolute left-1/2 top-1/2 z-20 w-[min(calc(100vw-32px),680px,51svh)] -translate-x-1/2"      initial={false}
       animate={{
         opacity: visible ? 1 : 0,
         y: visible ? (settled ? "-50%" : stage === 4 ? "-44%" : "-28%") : "-50%",
         rotateX: visible ? (settled ? 0 : 22) : -32,
         rotateY: visible ? (settled ? 0 : -7) : 10,
-        scale: visible ? (settled ? 1.5  : .88) : 0.62,
+         scale: visible ? (settled ? 1.5  : .88) : 0.62,
         filter: visible ? "blur(0px)" : "blur(5px)",
       }}
       transition={{ duration: 0.95, ease: [0.22, 1, 0.36, 1] }}

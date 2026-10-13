@@ -3,7 +3,12 @@ import { motion } from "framer-motion";
 import { weddingData } from "../data/weddingData";
 
 const nikah = weddingData.events.nikah;
-const WEDDING_DATE = new Date(`${nikah.date}T${nikah.time || "00:00"}`).getTime();
+const [, hour = "0", minute = "0", meridiem = "AM"] =
+  (nikah.time || "12:00 AM").match(/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i) || [];
+const hour24 = (Number(hour) % 12) + (meridiem.toUpperCase() === "PM" ? 12 : 0);
+const WEDDING_DATE = new Date(
+  `${nikah.date}T${String(hour24).padStart(2, "0")}:${minute}:00`,
+).getTime();
 
 export default function CountdownPage() {
   const calculateTime = () => {

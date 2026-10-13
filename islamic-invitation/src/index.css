@@ -96,7 +96,7 @@ button:disabled { cursor: default; }
   }
   .emblem-wrap img { width: 100%; height: auto; }
   .invitation-card {
-    width: min(calc(100vw - 32px), 370px);
+    width: min(calc(100vw - 24px), 420px, 60svh);
   }
   .scene-background {
     background-position: center top !important;
@@ -155,7 +155,7 @@ button:disabled { cursor: default; }
   .intro-copy h1 { font-size: clamp(1.5rem, 5svh, 2.35rem); }
   .intro-copy p { margin-top: .35rem; }
   .emblem-wrap { width: min(calc(100vw - 32px), 34.05svh); }
-  .invitation-card { max-height: 66svh !important; padding-top: 2.6rem; padding-bottom: 1rem; }
+  .invitation-card { max-height: 78svh !important; padding-top: 2.6rem; padding-bottom: 1rem; }
   .invitation-card h2 { margin-top: .2rem; font-size: 1.35rem; }
 }
 
